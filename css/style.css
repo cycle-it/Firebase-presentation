@@ -1,0 +1,38 @@
+
+@font-face {
+	font-family:			NeoSansStd-Regular;
+	src:					url("../fonts/NeoSansStd-Regular.otf") format("opentype");
+}
+
+.reveal {
+	border-style:			solid;
+	border-width:			40px 0px 0px 0px;
+	border-color:			rgb(243,171,0);
+	background-image:		url("../img/logo.jpeg");
+	background-repeat:		no-repeat;
+	background-attachment:	fixed;
+	background-position: 	bottom left;
+}
+
+.reveal, .reveal h1, .reveal h2, .reveal h3 {
+	/*background-color:		rgb(243,171,0);*/
+	background-color:		#ffffff; /*#f8f8f8;*/
+	font-family:			NeoSansStd-Regular, Helvetica, sans-serif;
+	/*text-shadow:			none;*/
+	color:					#202020;
+}
+
+.reveal h1 {
+	font-size:				90px;
+}
+
+.reveal .progress span {
+	background-color:		rgb(243,171,0);
+}
+
+.hidden {
+	visibility:				hidden;
+}
+
+/* EOF */
+
