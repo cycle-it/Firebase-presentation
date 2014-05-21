@@ -12,6 +12,16 @@
 	background-repeat:		no-repeat;
 	background-attachment:	fixed;
 	background-position: 	bottom left;
+	font-size:				32px;
+}
+
+/*.slides {
+	width:					100%;
+}*/
+
+.reveal .slides section {
+	margin-top:				-40px;
+	padding-top:			-60px;
 }
 
 .reveal, .reveal h1, .reveal h2, .reveal h3 {
@@ -24,6 +34,12 @@
 
 .reveal h1 {
 	font-size:				90px;
+	margin-bottom:			80px;
+}
+
+.reveal h2 {
+	font-size:				64px;
+	margin-bottom:			60px;
 }
 
 .reveal .progress span {
@@ -32,6 +48,19 @@
 
 .hidden {
 	visibility:				hidden;
+}
+
+.important {
+	background-color:		#ffff80;
+}
+
+.reveal li {
+	/*margin-bottom:			20px;*/
+	padding:				10px 0px;
+}
+
+.reveal a, .reveal a:visited, .reveal a:active, .reveal a:hover {
+	color:					#0000ff;
 }
 
 /* EOF */
