@@ -20,7 +20,7 @@
 }*/
 
 .reveal .slides section {
-	margin-top:				-40px;
+	/*margin-top:				-40px;*/
 	padding-top:			-60px;
 }
 
@@ -40,6 +40,11 @@
 .reveal h2 {
 	font-size:				64px;
 	margin-bottom:			60px;
+}
+
+.reveal .progress {
+	height:					8px;
+	background-color:		#ffffff;
 }
 
 .reveal .progress span {

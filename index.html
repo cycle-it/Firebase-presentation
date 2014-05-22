@@ -6,14 +6,14 @@
 
 		<meta charset="utf-8">
 
-		<meta name="description" content="Micro–proyecto de aplicación interna, útil para Cycle, usando FireBase para persistencia">
+		<meta name="description" content="Micro–proyecto de aplicación interna útil usando FireBase">
 		<meta name="keywords" content="Cycle,Cycle–IT,Firebase,proyecto,project">
 		<meta name="author" content="Antonio, Cycle–IT">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Micro–proyecto de aplicación interna, útil para Cycle, usando <em>FireBase</em> para persistencia</title>
+		<title>Micro–proyecto de aplicación interna útil usando FireBase</title>
 
 		<link rel="stylesheet" type="text/css" href="css/reveal.min.css">
 		<link rel="stylesheet" type="text/css" href="css/theme/simple.css" id="theme">
@@ -45,7 +45,7 @@
 			<div class="slides">
 
 				<section>
-					<h1>Micro–proyecto de aplicación interna, útil para Cycle, usando <em>FireBase</em> para persistencia</h1>
+					<h1>Micro–proyecto de aplicación interna útil usando <em>FireBase</em></h1>
 					<p>Cycle–IT</p>
 					<p>21/05/2014</p>
 				</section>
@@ -53,10 +53,10 @@
 				<section>
 					<h2>Los autores</h2>
 					<ul>
-						<li>Antonio</li>
-						<li>Raúl</li>
-						<li>Moha</li>
-						<li>Miguel</li>
+						<li><strong>Antonio</strong>: idea, coordinación, programación.</li>
+						<li><strong>Miguel</strong>: <em>scrum&ndash;master</em>, programación.</li>
+						<li><strong>Raúl</strong>: programación.</li>
+						<li><strong>Moha</strong>: programación.</li>
 					</ul>
 				</section>
 
@@ -64,60 +64,151 @@
 					<h2>Qué vamos a ver</h2>
 					<ul>
 						<li>Objetivos y justificación</li>
-						<li><em>Firebase</em></li>
-						<li><em>angularFire</em></li>
+						<li><em>Firebase</em> y <em>angularFire</em></li>
 						<li><em>Receticas</em><ul>
 							<li>La aplicación</li>
 							<li>El código</li></ul></li>
+						<li>Conclusiones y debate</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Objetivos</h2>
-					<ol>
-						<li><strong><em>Desvirgarnos</em> con <a href="https://www.firebase.com/">Firebase</a></strong>, uno de los servicios
-							de persistencia «en la nube» más populares, y que además parece especialmente versátil y fácil de usar.</li>
-						<li><strong>Mejorar la colaboración en la empresa</strong>, o resolver alguna de esas pequeñas necesidades internas,
-							o dotarnos de una nueva herramienta completamente a medida.</li>
-					</ol>
+
+					<section>
+						<h2>Objetivos</h2>
+						<ol>
+							<li><strong><em>Desvirgarnos</em> con <a href="https://www.firebase.com/">Firebase</a></strong>, uno de los servicios
+								de persistencia «en la nube» más populares, y que además parece especialmente versátil y fácil de usar.</li>
+							<li><strong>Mejorar la colaboración en la empresa</strong>, o resolver alguna de esas pequeñas necesidades internas,
+								o dotarnos de una nueva herramienta completamente a medida.</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Justificación</h2>
+						<ol>
+							<li>Somos una empresa <u>centrada en interfaz de usuario</u>. Si en algunos casos podemos desentendernos <u>aún</u> más del
+								<em>backend</em>, eso nos evitará distracciones, seremos más productivos en UX, y por tanto
+								<span class="important">más competitivos</span>.</li>
+							<li>Tenemos que estar al día en servicios de persistencia «en la nube» y en tiempo real.</li>
+							<li><a href="https://www.firebase.com/quickstart/angularjs.html">Firebase <em>es muy amigo</em> de AngularJS</a>
+								y existen <a href="https://github.com/firebase/angularFire">buenos <em>bindings</em> de AngularJS para Firebase</a>.</li>
+							<li>De vez en cuando nos surgen pequeñas necesidades internas que a veces no terminamos de resolver.</li>
+						</ol>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Justificación</h2>
-					<ol>
-						<li>Somos una empresa <u>centrada en interfaz de usuario</u>. Si en algunos casos podemos desentendernos <u>aún</u> más del
-							<em>backend</em>, eso nos evitará distracciones, seremos más productivos en UX, y por tanto
-							<span class="important">más competitivos</span>.</li>
-						<li>Tenemos que estar al día en servicios de persistencia «en la nube» y en tiempo real.</li>
-						<li><a href="https://www.firebase.com/quickstart/angularjs.html">Firebase <em>es muy amigo</em> de AngularJS</a>
-							y existen <a href="https://github.com/firebase/angularFire">buenos <em>bindings</em> de AngularJS para Firebase</a>.</li>
-						<li>De vez en cuando nos surgen pequeñas necesidades internas que a veces no terminamos de resolver.</li>
-					</ol>
+
+					<section>
+						<h2><em>Firebase</em></h2>
+						<blockquote>&laquo;A powerful API to store and sync data in realtime.&raquo;</blockquote>
+					</section>
+
+					<section>
+						<h2><em>angularFire</em></h2>
+						<ul>
+							<li><a href="https://www.firebase.com/quickstart/angularjs.html"><tt>https://www.firebase.com/quickstart/angularjs.html</tt></a></li>
+							<li><a href="https://github.com/firebase/angularfire"><tt>https://github.com/firebase/angularfire</tt></a></li>
+						</ul>
+					</section>
+
 				</section>
 
 				<section>
-					<h2><em>Firebase</em></h2>
-					<blockquote>&laquo;A powerful API to store and sync data in realtime.&raquo;</blockquote>
-					<p></p>
-					<p></p>
+
+					<section>
+						<h2><em>Receticas</em>: la aplicación</h2>
+						<p>Proyecto elegido: <strong>repositorio de recetas de programación (<em>snippets</em>)</strong>.</p>
+						<ul>
+							<li>Coordinado con <em>scrum</em> y <a href="https://trello.com/b/jdU4Itgu/receticas">usando Trello</a>.</li>
+							<li>Una reunión de planificación.</li>
+							<li><em>Snippet</em>: &laquo;fragmento de código identificado por un nombre y una descripción&raquo;.</li>
+							<li>Roles: desarrollador, diseñador.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2><em>Receticas</em>: el código</h2>
+						<ul>
+							<li>&laquo;<strong>Arquitectura técnica</strong>: <a href="https://www.firebase.com/account/">cuenta de <em>Firebase</em></a>, montar proyecto, enganchar <em>AngularJS</em> y <em>Firebase</em>.&raquo;</li>
+							<li>&laquo;<strong>Crear, consultar, modificar, borrar una receta</strong>: al crear una receta se debe indicar el desarrollador/diseñador que la crea (preferiblemente un email); indicar una URL donde se usa; borrar requiere confirmación.&raquo;</li>
+							<li><strike>&laquo;<strong>Categorizar recetas</strong>.&raquo;</strike></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2><em>Receticas</em>: el código</h2>
+						<p><a href="https://glowing-fire-8382.firebaseio.com/"><tt>https://glowing-fire-8382.firebaseio.com/</tt></a></p>
+					</section>
+
+					<section>
+						<h2><em>Receticas</em>: el código</h2>
+						<h3>Moha: colorear sintaxis de código</h3>
+						<ul>
+							<li>&laquo;En la creación se asignaría el lenguaje al que pertenece el <em>snippet</em>.
+							Para colorear se usaría algún <em>plugin</em> existente.&raquo;</li>
+							<li><a href="https://github.com/isagalaev/highlight.js">highlight.js</a>.</li>
+							<li><a href="https://github.com/pc035860/angular-highlightjs">angular-highlightjs</a>.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2><em>Receticas</em>: el código</h2>
+						<h3>Miguel: copiar al portapapeles</h3>
+						<ul>
+							<li><a href="https://github.com/zeroclipboard/zeroclipboard">zeroclipboard</a>.</li>
+							<li>Miguel: &laquo;No hay muchas mejores formas y es la que usa GitHub.&raquo;</li>
+							<li>Toni: &laquo;HTML5 necesita Flash Player.&raquo;</li>
+							<li>&hellip;hay <a href="http://www.lsauer.com/2012/05/javascript-copy-text-to-clipboard.html">mejores alternativas
+								que no dependen de Flash</a>.</li>
+							<li>&hellip;aunque no dejan de ser &laquo;una ñapa&raquo;.</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2><em>Receticas</em>: el código</h2>
+						<h3>Raúl: consultar recetas</h3>
+						<ul>
+							<li>&laquo;Buscar en código a partir de una cadena de texto: en el nombre, en la descripción, por autor.&raquo;</li>
+							<li><a href="http://www.elasticsearch.org/">Elasticsearch</a>:
+								<em>&laquo;an end-to-end search and analytics platform&raquo;</em>.</li>
+							<li><a href="https://github.com/firebase/flashlight">Flashlight</a>:
+								<em>&laquo;pluggable integration with ElasticSearch to provide advanced content searches in Firebase&raquo;</em>.</p>
+							<li>&hellip;+ Node.js + NPM.</li>
+						</ul>
+					</section>
+
 				</section>
 
 				<section>
-					<h2><em>angularFire</em></h2>
-					<p></p>
-					<p></p>
-				</section>
 
-				<section>
-					<h2><em>Receticas</em>: la aplicación</h2>
-				</section>
+					<section>
+						<h2>Conclusiones</h2>
+						<ul>
+							<li>Usar <em>Firebase</em> es muy fácil.</li>
+							<li>&hellip;y usando <em>angularFire</em>, más todavía.</li>
+							<li>El hecho de que use JSON lo hace muy flexible.</li>
+							<li>Donde muestra toda su potencia es en aplicaciones <u>en tiempo real</u>.</li>
+							<li>&hellip;en cambio, no está pensado para consultas complejas (no es una BD al uso).</li>
+						</ul>
+					</section>
 
-				<section>
-					<h2><em>Receticas</em>: el código</h2>
-				</section>
+					<section>
+						<h2>Cuestiones abiertas</h2>
+						<ul>
+							<li>Migración de datos desde <em>Firebase</em>: ¿Es fácil? ¿Es <em>posible</em>? <br />
+								Ejemplo (negativo) del pasado: <em>StackMob</em>.</li>
+							<li>¿Rendimiento económico concreto en Cycle?</li>
+							<li>Pendiente: ¡hacerlo bien y desplegar en <tt>Maquinica</tt> (por ejemplo)!</li>
+						</ul>
+					</section>
 
-				<section>
-					<h2>EOF</h2>
+					<section>
+						<h2><tt>&lt;!-- EOF --&gt;</tt></h2>
+					</section>
+
 				</section>
 
 			</div>
